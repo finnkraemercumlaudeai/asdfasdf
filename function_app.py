@@ -5,8 +5,8 @@ import logging
 
 app = func.FunctionApp()
 
-@app.route(route="TestHttpGetLenferink", auth_level=func.AuthLevel.ANONYMOUS)
-def TestHttpGet(req: func.HttpRequest) -> func.HttpResponse:
+@app.route(route="TestHttpLenferink", auth_level=func.AuthLevel.ANONYMOUS)
+def TestHttpLenferink(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     name = req.params.get('name')
