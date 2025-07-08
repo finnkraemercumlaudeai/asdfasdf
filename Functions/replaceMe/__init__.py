@@ -1,7 +1,7 @@
 import azure.functions as func
 import logging
 
-from .generate import subfunction   # <-- logic lives here
+from .generate import subfunction_1   # <-- logic lives here
 
 bp = func.Blueprint()
 
@@ -22,6 +22,6 @@ def replaceMe(req: func.HttpRequest) -> func.HttpResponse:
             name = None
 
     # call your pure-Python logic from generate.py 
-    greeting = Subfunction(name)
+    greeting = subfunction_1(name)
 
     return func.HttpResponse(greeting, status_code=200)
