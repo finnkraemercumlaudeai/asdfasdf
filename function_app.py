@@ -15,4 +15,4 @@ app.register_functions(replace_me_bp)
 # Functie die kan worden gebruikt om te testen of de functie-app draait
 @app.route(route="test", auth_level=func.AuthLevel.ANONYMOUS)
 def test_function(req: func.HttpRequest) -> func.HttpResponse:
-    return func.HttpResponse("Functie app is draaiend.", status_code=200)
+    return func.HttpResponse("Functie app is test draaiend.", status_code=200)
