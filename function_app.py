@@ -3,7 +3,7 @@ import datetime
 import json
 import logging
 
-app = func.FunctionApp() 
+app = func.FunctionApp()  
 
 @app.route(route="EditedTestHttpLenferink", auth_level=func.AuthLevel.ANONYMOUS)
 def TestHttpLenferink(req: func.HttpRequest) -> func.HttpResponse:
