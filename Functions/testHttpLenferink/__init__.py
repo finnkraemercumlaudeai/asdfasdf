@@ -14,7 +14,7 @@ def testHttpLenferink(req: func.HttpRequest) -> func.HttpResponse:
     logging.info("Processing TestHttpLenferink request…")
 
     # parse query or JSON
-    name = req.params.get("name")
+    name = req.__params.get("name")
     if not name:
         try:
             name = req.get_json().get("name")

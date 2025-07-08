@@ -6,4 +6,4 @@ def build_greeting(name: str | None) -> str:
     if name:
         return f"Hello, {name}!"
     else:
-        return "Hello, world!"
+        return "Hello, world!" 
